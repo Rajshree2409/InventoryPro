@@ -1,0 +1,60 @@
+{% comment %} {% extends 'partials/base.html' %}
+{% block title %} Login Page {% endblock %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row my-4">
+        <div class="col-md-4">
+
+        </div>
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header bg-info text-white">
+                    Profile Page
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <span class="h4"> Profile Information</span> 
+                            <hr>
+{% comment %}                             
+                                <form method="POST">
+                                    {{ user_form|crispy }}
+                                    {{ profile_form|crispy }}
+
+                                </form>
+                                {% comment %} <tbody> {% endcomment %}
+                                    {% comment %} <tr>
+                                        <th scope="row">Name</th>
+                                        <td>{{ user.username }}</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Email</th>
+                                        <td>{{ user.email }}</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Phone</th>
+                                        <td>{{ user.profile.phone }}</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Address</th>
+                                        <td>{{ user.profile.address }}</td>
+                                    </tr>
+                                </tbody>
+                             {% endcomment %} {% endcomment %}
+{% comment %} 
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div> {% endcomment %}
+
+{% comment %} {% endblock %} {% endcomment %} {% endcomment %}
